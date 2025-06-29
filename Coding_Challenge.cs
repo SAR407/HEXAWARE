@@ -1,11 +1,11 @@
-﻿// LoanManagementSystem.cs
+﻿// LoanManagement
 using System;
 using System.Collections.Generic;
 using System.Data.SqlClient;
 
 namespace LoanManagementSystem
 {
-    // Custom Exception
+    //  Exception
     public class InvalidLoanException : Exception
     {
         public InvalidLoanException(string message) : base(message) { }
@@ -30,7 +30,7 @@ namespace LoanManagementSystem
         }
     }
 
-    // Base Loan class
+    //  Loan class
     public class Loan
     {
         public int LoanId { get; set; }
